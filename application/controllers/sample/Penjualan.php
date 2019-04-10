@@ -31,7 +31,6 @@ class Penjualan extends MY_Controller {
 		*/
 		$this->load->library('menus');
 		
-		$this->list['']
         $this->list['page_name']="Transaksi Penjualan";
         $this->list['list_name']="Daftar Transaksi Penjualan";
         $this->list['addnew_ajax_url']=site_url().'SalesOrder/add';
@@ -45,6 +44,11 @@ class Penjualan extends MY_Controller {
             'a.fst_customer_name' => 'Customer Name'
 		];
 		
+		$this->list['breadcrumbs']=[
+			['title'=>'Home','link'=>'#','icon'=>"<i class='fa fa-dashboard'></i>"],
+			['title'=>'sample','link'=>'#','icon'=>''],
+			['title'=>'Penjualan','link'=> NULL ,'icon'=>''],
+		];
 		$this->list['columns']=[
 			['title' => 'ID', 'width'=>'10%', 'data'=>'fin_id'],
 			['title' => 'Date', 'width'=>'10%', 'data'=>'fdt_date',
