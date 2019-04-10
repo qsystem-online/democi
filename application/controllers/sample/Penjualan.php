@@ -30,7 +30,8 @@ class Penjualan extends MY_Controller {
 		$this->parser->parse('template/main',$this->data);
 		*/
 		$this->load->library('menus');
-        
+		
+		$this->list['']
         $this->list['page_name']="Transaksi Penjualan";
         $this->list['list_name']="Daftar Transaksi Penjualan";
         $this->list['addnew_ajax_url']=site_url().'SalesOrder/add';
