@@ -21,6 +21,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- sidebar menu: : style can be found in sidebar.less -->
 	<ul class="sidebar-menu" data-widget="tree">
 		<?= $this->menus->build_menu(); ?>
+
+		<li class="treeview menu-open">
+			<a href="http://localhost/democi/forms.htrml">
+				<i class="fa fa-edit"></i><span>Manual Sampel</span>
+				<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+			</a>
+			<ul class="treeview-menu" style="display: block;">
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-circle-o"></i><span>Select 2</span>
+						<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+					</a>
+					<ul class="treeview-menu" style="display: block;">
+						<li class="">
+							<a href="<?= base_url()?>sample/select2/customOption">
+								<i class="fa fa-circle-o"></i><span>Custom Option</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="  ">
+					<a href="http://localhost/democi/welcome/advanced_element"><i class="fa fa-circle-o"></i><span>Advanced Elements</span></a>
+				</li>
+				<li class="  ">
+					<a href="http://localhost/democi/welcome/editor"><i class="fa fa-circle-o"></i><span>Editors</span></a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </section>
 <!-- /.sidebar -->		  
